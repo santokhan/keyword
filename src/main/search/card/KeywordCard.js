@@ -10,7 +10,7 @@ import BingApi from "./bing/BingApi";
 import YoutubeApi from "./youtube/YoutubeApi";
 import YahooApi from "./yahoo/YahooApi";
 import AmazonApi from "./amazon/AmazonApi";
-import EbayApi from "./ebay/EbayApi";
+// import EbayApi from "./ebay/EbayApi";
 
 export default function KeywordCard(props) {
   const { response } = props;
