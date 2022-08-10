@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/jsx-no-target-blank */
 import { useState, useEffect } from "react";
-import axios from "axios";
 
 export default function GoogleApi(props) {
   const { word } = props;
@@ -11,7 +10,7 @@ export default function GoogleApi(props) {
   const uri = `https://suggestqueries.google.com/complete/search?client=chrome&q=${word}&hl=en`;
 
   useEffect(() => {
-    fetch(uri, { mode: "no-cors" })
+    fetch(uri)
       .then((res) => res.json())
       .then(
         (data) => {
@@ -61,35 +60,4 @@ export default function GoogleApi(props) {
       </div>
     );
   }
-}
-
-export function GoogleApi2(props) {
-  const { word } = props;
-  const [keywords, setkeywords] = useState([]);
-  const uri = `https://suggestqueries.google.com/complete/search?client=chrome&q=${word}&hl=en`;
-
-  useEffect(() => {
-    axios.get(uri).then((data) => {
-      setkeywords(data);
-    });
-  }, []);
-
-  return (
-    <div>
-      {keywords[1].map((e) => {
-        let uri = "https://www.google.com/search?q=" + e;
-        return (
-          <div className="py-2" key={e}>
-            <a
-              href={uri}
-              target="_blank"
-              className="text-gray-900 hover:text-teal-400"
-            >
-              {e}
-            </a>
-          </div>
-        );
-      })}
-    </div>
-  );
 }

@@ -45,10 +45,7 @@ export default function BingApi(props) {
   console.log(uri);
 
   useEffect(() => {
-    fetch(uri, {
-      method: "GET",
-      mode: "no-cors",
-    })
+    fetch(uri)
       .then((blob) => blob.json())
       .then(
         (data) => {

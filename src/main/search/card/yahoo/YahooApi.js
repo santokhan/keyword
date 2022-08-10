@@ -10,10 +10,7 @@ export default function YahooApi(props) {
   const uri = `https://search.yahoo.com/sugg/gossip/gossip-us-ura/?client=chrome&command=${word}&nresults=20&output=json`;
 
   useEffect(() => {
-    fetch(uri, {
-      method: "GET",
-      mode: "no-cors",
-    })
+    fetch(uri)
       .then((res) => res.json())
       .then(
         (data) => {

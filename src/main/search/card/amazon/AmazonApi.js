@@ -12,11 +12,7 @@ export default function AmazonApi(props) {
   console.log(uri);
 
   useEffect(() => {
-    fetch(uri, {
-      headers: { "Content-Type": "application/json" },
-      method: "GET",
-      mode: "no-cors",
-    })
+    fetch(uri)
       .then((res) => res.json())
       .then(
         (data) => {
