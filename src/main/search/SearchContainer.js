@@ -6,7 +6,7 @@ export default function SearchContainer() {
 
   return (
     <div className="w-full sm:w-8/12 px-2">
-      <div className="bg-teal-50 rounded-xl sm:rounded-2xl p-6 sm:p-12">
+      <div className="bg-teal-50 rounded-xl sm:rounded-2xl py-6 sm:p-12">
         <form className="sm:py-10 sm:px-10">
           <div className="px-10">
             <input

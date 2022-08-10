@@ -20,7 +20,7 @@ export default function KeywordCard(props) {
   } else {
     return (
       <div className="flex flex-wrap py-4">
-        <div className="w-1/2 p-2">
+        <div className="w-1/2 py-2 px-1 sm:px-2">
           <div className="bg-white py-4 sm:py-6 px-2 sm:px-6 rounded-2xl">
             <div className="font-medium h-4 sm:h-6 flex justify-center mb-1 sm:mb-2">
               <img className="h-full" src={google} alt="google" />
@@ -28,7 +28,7 @@ export default function KeywordCard(props) {
             <GoogleApi word={response} />
           </div>
         </div>
-        <div className="w-1/2 p-2">
+        <div className="w-1/2 py-2 px-1 sm:px-2">
           <div className="bg-white py-4 sm:py-6 px-2 sm:px-6 rounded-2xl">
             <div className="font-medium h-4 sm:h-6 flex justify-center mb-1 sm:mb-2">
               <img className="h-full" src={youtube} alt="youtube" />
@@ -36,7 +36,7 @@ export default function KeywordCard(props) {
             <YoutubeApi word={response} />
           </div>
         </div>
-        <div className="w-1/2 p-2">
+        <div className="w-1/2 py-2 px-1 sm:px-2">
           <div className="bg-white py-4 sm:py-6 px-2 sm:px-6 rounded-2xl">
             <div className="font-medium h-4 sm:h-6 flex justify-center mb-1 sm:mb-2">
               <img className="h-full" src={bing} alt="bing" />
@@ -44,7 +44,7 @@ export default function KeywordCard(props) {
             <BingApi word={response} />
           </div>
         </div>
-        <div className="w-1/2 p-2">
+        <div className="w-1/2 py-2 px-1 sm:px-2">
           <div className="bg-white py-4 sm:py-6 px-2 sm:px-6 rounded-2xl">
             <div className="font-medium h-4 sm:h-6 flex justify-center mb-1 sm:mb-2">
               <img className="h-full" src={yahoo} alt="yahoo" />
@@ -52,7 +52,7 @@ export default function KeywordCard(props) {
             <YahooApi word={response} />
           </div>
         </div>
-        <div className="w-1/2 p-2">
+        <div className="w-1/2 py-2 px-1 sm:px-2">
           <div className="bg-white py-4 sm:py-6 px-2 sm:px-6 rounded-2xl">
             <div className="font-medium h-4 sm:h-6 flex justify-center mb-1 sm:mb-2">
               <img className="h-full" src={amazon} alt="amazon" />
@@ -60,7 +60,7 @@ export default function KeywordCard(props) {
             <AmazonApi word={response} />
           </div>
         </div>
-        <div className="w-1/2 p-2">
+        <div className="w-1/2 py-2 px-1 sm:px-2">
           <div className="bg-white py-4 sm:py-6 px-2 sm:px-6 rounded-2xl">
             <div className="font-medium h-4 sm:h-6 flex justify-center mb-1 sm:mb-2">
               <img className="h-full" src={ebay} alt="ebay" />

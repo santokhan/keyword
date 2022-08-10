@@ -12,8 +12,6 @@ export default function YoutubeApi(props) {
     word +
     "&hl=en";
 
-  console.log(uri);
-
   useEffect(() => {
     fetch(uri)
       .then((res) => res.json())
@@ -31,7 +29,6 @@ export default function YoutubeApi(props) {
         (error) => {
           setloaded(true);
           seterror(error);
-          console.log(error);
         }
       );
   }, []);
@@ -47,7 +44,7 @@ export default function YoutubeApi(props) {
   } else {
     return (
       <div>
-        {keywords.map((e) => {
+        {keywords[1].map((e) => {
           let uri = "https://www.google.com/search?q=" + e;
           return (
             <div className="py-2" key={e}>
